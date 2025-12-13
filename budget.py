@@ -5,15 +5,6 @@ import os
 from openpyxl import load_workbook
 
 
-expenses = [
-       {"category": "food", "amount": 50, "payment": "card"},
-    {"category": "food", "amount": 150, "payment": "cash"},
-    {"category": "fun", "amount": 300.50, "payment": "bank"},
-    {"category": "fun", "amount": 20, "payment": "cash"},
-    {"category": "rent", "amount": 2070, "payment": "bank"},
-    {"category": "other", "amount": 0, "payment": "cash"},     
-    {"category": "", "amount": 100, "payment": "card"},  ]
-
 def clean_expenses(expenses):
     my_list = []
     for exp in expenses:
